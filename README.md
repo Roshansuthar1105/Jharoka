@@ -23,19 +23,19 @@ Check out the live demo: [Jharoka Image Gallery](http://jharoka.netlify.app)
 ## 📸 Screenshots
 
 ### Desktop View
-![Desktop Home View](/public/preview/home.png)
+<img src="/public/preview/home.png" alt="Desktop Home View" width="600"/>
 
 ### Alternative View
-![Desktop Alternative View](/public/preview/home2.png)
+<img src="/public/preview/home2.png" alt="Desktop Alternative View" width="600"/>
 
 ### Mobile View
-![Mobile View](/public/preview/mobile.png)
+<img src="/public/preview/mobile.png" alt="Mobile View" width="400"/>
 
 ### Mobile Navigation
-![Mobile Navigation](/public/preview/mobile%20with%20navbar.png)
+<img src="/public/preview/mobile%20with%20navbar.png" alt="Mobile Navigation" width="400"/>
 
 ### Loading State
-![Loading State](/public/preview/loading.png)
+<img src="/public/preview/loading.png" alt="Loading State" width="400"/>
 
 ## 🛠️ Technologies Used
 
