@@ -1,6 +1,4 @@
-# Jharoka - Image Gallery 🖼️✨
-<img src="/public/logo.png" alt="Logo : Jharoka" width="100" />
-![Jharoka Logo](/public/logo.png)
+# <img src="/public/logo.png" alt="Logo : Jharoka" height="35" /> Jharoka - Image Gallery 
 
 ## 📋 Overview
 
@@ -23,19 +21,19 @@ Check out the live demo: [Jharoka Image Gallery](http://jharoka.netlify.app)
 ## 📸 Screenshots
 
 ### Desktop View
-<img src="/public/preview/home.png" alt="Desktop Home View" height="300" />
+<img src="/public/preview/home.png" alt="Desktop Home View" height="400" />
 
 ### Alternative View
-<img src="/public/preview/home2.png" alt="Desktop Alternative View" height="300"/>
+<img src="/public/preview/home2.png" alt="Desktop Alternative View" height="400"/>
 
 ### Mobile View
 
 | Mobile View | Mobile Navigation |
 |-------------|------------------|
-| <img src="/public/preview/mobile.png" alt="Mobile View" width="250"/> | <img src="/public/preview/mobile%20with%20navbar.png" alt="Mobile Navigation" width="250"/> |
+| <img src="/public/preview/mobile.png" alt="Mobile View" width="290"/> | <img src="/public/preview/mobile%20with%20navbar.png" alt="Mobile Navigation" width="290"/> |
 
 ### Loading State
-<img src="/public/preview/loading.png" alt="Loading State" height="300"/>
+<img src="/public/preview/loading.png" alt="Loading State" height="400"/>
 
 ## 🛠️ Technologies Used
 
