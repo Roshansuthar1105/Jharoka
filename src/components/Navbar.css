@@ -1,0 +1,235 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 50;
+    padding: 0.75rem 0;
+}
+
+.navbar-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+@media screen and (min-width: 768px) {
+    .navbar-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #f3f4f6, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.menu-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-btn {
+    background: rgba(147, 51, 234, 0.1);
+    border: 1px solid rgba(147, 51, 234, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(147, 51, 234, 0.2);
+    border-color: rgba(147, 51, 234, 0.3);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-btn .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    filter: invert(1);
+}
+
+.page-indicator {
+    color: #9ca3af;
+    font-weight: 500;
+    min-width: 5rem;
+    text-align: center;
+}
+
+.input-controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.page-input {
+    background: rgba(55, 65, 81, 0.5);
+    border: 1px solid rgba(75, 85, 99, 0.5);
+    color: #d1d5db;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    width: 6rem;
+    transition: all 0.2s ease;
+}
+
+.page-input:focus {
+    background: rgba(55, 65, 81, 0.7);
+    border-color: rgba(147, 51, 234, 0.5);
+    outline: none;
+}
+
+.limit-select {
+    background: rgba(55, 65, 81, 0.5);
+    border: 1px solid rgba(75, 85, 99, 0.5);
+    color: #d1d5db;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.limit-select:focus {
+    background: rgba(55, 65, 81, 0.7);
+    border-color: rgba(147, 51, 234, 0.5);
+    outline: none;
+}
+
+.home-btn {
+    background: rgba(22, 163, 74, 0.1);
+    border: 1px solid rgba(22, 163, 74, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.home-btn:hover {
+    background: rgba(22, 163, 74, 0.2);
+    border-color: rgba(22, 163, 74, 0.3);
+}
+
+.home-btn .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #22c55e;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-content {
+        padding: 0 1rem;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar-controls {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-controls.show {
+        display: flex;
+    }
+
+    .pagination-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .input-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .page-input,
+    .limit-select {
+        flex: 1;
+        max-width: 150px;
+    }
+
+    .home-btn {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand .logo {
+        font-size: 1.25rem;
+    }
+
+    .page-indicator {
+        min-width: 4rem;
+        font-size: 0.875rem;
+    }
+
+    .nav-btn,
+    .home-btn {
+        padding: 0.375rem;
+    }
+
+    .nav-btn .icon,
+    .home-btn .icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .page-input,
+    .limit-select {
+        padding: 0.375rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
