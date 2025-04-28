@@ -5,11 +5,11 @@ import Navbar from './components/Navbar'
 
 function App() {
   const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(12);
+  const [limit, setLimit] = useState(30);
   return (
     <>
-    <Navbar page={page} setPage={setPage} limit={limit} setLimit={setLimit} />
-    <CardBody page={page} setPage={setPage} limit={limit} setLimit={setLimit} />
+    <Navbar setPage={setPage} limit={limit} setLimit={setLimit} />
+    <CardBody page={page} setPage={setPage} limit={limit} />
     </>
   )
 }
